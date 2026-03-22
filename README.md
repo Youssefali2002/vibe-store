@@ -1,7 +1,7 @@
 # 🛍️ Vibe Store - E-Commerce Platform
 
 <div align="center">
-  <img src="preview.jpg" alt="Vibe Store Preview" width="100%" style="max-width: 800px; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.15);">
+  <img src="preview.png" alt="Vibe Store Preview" width="100%" style="max-width: 800px; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.15);">
   
   ### 🛍️ Modern E-Commerce Platform
   
@@ -70,7 +70,7 @@
 - **Color Consistency** - Unified design system with CSS variables
 - **Social Media Integration** - Complete social platform links
 
-### 🛡️ Security Features
+### �️ Security Features
 - **Right-Click Protection** - Prevent content copying
 - **Dev Tools Detection** - Block developer tools access
 - **Console Trap** - Detect and prevent inspection
@@ -313,20 +313,14 @@ const protectionConfig = {
 
 ### 🏠 Desktop View
 <div align="center">
-  <img src="screenshots/desktop-view.png" alt="Desktop View" width="800">
+  <img src="preview.png" alt="Desktop View" width="800">
   <p><em>Full desktop experience with all features</em></p>
 </div>
 
 ### 📱 Mobile View
 <div align="center">
-  <img src="screenshots/mobile-view.png" alt="Mobile View" width="300">
+  <img src="preview.png" alt="Mobile View" width="300">
   <p><em>Optimized mobile experience</em></p>
-</div>
-
-### 🎨 UI Details
-<div align="center">
-  <img src="screenshots/ui-details.png" alt="UI Details" width="600">
-  <p><em>Attention to design details</em></p>
 </div>
 
 ---
@@ -394,7 +388,7 @@ DOMAIN_LOCK=vibestore.com
 
 ---
 
-## 📊 Performance
+## � Performance
 
 ### ⚡ Optimization Features
 - **Lazy Loading** - Images load on demand
@@ -403,7 +397,7 @@ DOMAIN_LOCK=vibestore.com
 - **Caching Strategy** - Browser caching headers
 - **CDN Ready** - Asset delivery optimization
 
-### 📈 Performance Metrics
+### � Performance Metrics
 - **Lighthouse Score**: 95+ Performance
 - **Page Load Time**: < 2 seconds
 - **First Contentful Paint**: < 1.5 seconds
@@ -420,7 +414,7 @@ DOMAIN_LOCK=vibestore.com
 4. **Push to the branch** (`git push origin feature/amazing-feature`)
 5. **Open a Pull Request**
 
-### 📋 Contributing Guidelines
+### � Contributing Guidelines
 - Follow the existing code style
 - Ensure accessibility compliance
 - Test on multiple devices
@@ -451,25 +445,21 @@ copies or substantial portions of the Software.
 
 ---
 
-## 📞 Contact
+## � Contact
 
 ### 👨‍💻 Developer Information
 - **Name**: Yousef Yasser Ismail
-- **Email**: your.email@example.com
-- **Portfolio**: [your-portfolio.com](https://your-portfolio.com)
-- **LinkedIn**: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
+- **Email**: youseef.ali.2002@gmail.com
 - **GitHub**: [github.com/yousef-yasser-ismail](https://github.com/yousef-yasser-ismail)
 
 ### 🛍️ Project Links
-- **Live Demo**: [vibestore.com](https://vibestore.com)
 - **GitHub Repository**: [github.com/yousef-yasser-ismail/vibe-store](https://github.com/yousef-yasser-ismail/vibe-store)
-- **Documentation**: [Project Wiki](https://github.com/yousef-yasser-ismail/vibe-store/wiki)
 
 ---
 
 <div align="center">
 
-### � Developer
+### 👨‍💻 Developer
 
 <div style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 20px; border-radius: 12px; margin: 20px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
   <div style="display: flex; align-items: center; justify-content: center; gap: 15px; flex-wrap: wrap;">
@@ -481,7 +471,7 @@ copies or substantial portions of the Software.
   </div>
 </div>
 
-### �🌟 Show Your Support
+### 🌟 Show Your Support
 
 If you find this project helpful or impressive, please consider:
 
