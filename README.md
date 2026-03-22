@@ -11,7 +11,7 @@
   [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://www.javascript.com/)
   [![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
   
-  [![Live Demo](https://img.shields.io/badge/Live%20Demo-4CAF50?style=for-the-badge&logo=vercel)](https://your-demo-link.com)
+  [![Live Demo](https://img.shields.io/badge/Live%20Demo-4CAF50?style=for-the-badge&logo=vercel)](https://youssefali2002.github.io/vibe-store/)
   [![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=github)](https://your-portfolio.com)
 </div>
 
@@ -127,7 +127,7 @@
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yousef-yasser-ismail/vibe-store.git
+   git clone https://github.com/Youssefali2002/vibe-store.git
    cd vibe-store
    ```
 
@@ -450,10 +450,11 @@ copies or substantial portions of the Software.
 ### 👨‍💻 Developer Information
 - **Name**: Yousef Yasser Ismail
 - **Email**: youseef.ali.2002@gmail.com
-- **GitHub**: [github.com/yousef-yasser-ismail](https://github.com/yousef-yasser-ismail)
+- **GitHub**: [github.com/Youssefali2002](https://github.com/Youssefali2002)
 
 ### 🛍️ Project Links
-- **GitHub Repository**: [github.com/yousef-yasser-ismail/vibe-store](https://github.com/yousef-yasser-ismail/vibe-store)
+- **Live Demo**: [youssefali2002.github.io/vibe-store/](https://youssefali2002.github.io/vibe-store/)
+- **GitHub Repository**: [github.com/Youssefali2002/vibe-store](https://github.com/Youssefali2002/vibe-store)
 
 ---
 
@@ -482,7 +483,7 @@ If you find this project helpful or impressive, please consider:
 
 ### 🚀 Let's Connect!
 
-[![GitHub followers](https://img.shields.io/github/followers/yousef-yasser-ismail?style=social)](https://github.com/yousef-yasser-ismail)
+[![GitHub followers](https://img.shields.io/github/followers/Youssefali2002?style=social)](https://github.com/Youssefali2002)
 [![Twitter Follow](https://img.shields.io/twitter/follow/yourhandle?style=social)](https://twitter.com/yourhandle)
 
 ---
