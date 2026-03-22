@@ -1,0 +1,867 @@
+﻿<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vibe Store</title>
+  <meta name="description"
+    content="متجرك الإلكتروني الأول للأزياء العصرية والملابس الرياضية بأحدث التصاميم وأفضل الجودات" />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://unpkg.com" crossorigin="anonymous" />
+  <link rel="preload" href="style/bootstrap.min.css" as="style" />
+  <link rel="preload" href="style/main.css" as="style" />
+  <link rel="stylesheet" href="style/bootstrap.min.css" />
+  <link rel="stylesheet" href="style/main.css" />
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  </noscript>
+  <link rel="icon" href="images/logo.png" type="image/x-icon" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" media="print" onload="this.media='all'" />
+  <link rel="preload" as="image" href="images/POLO1.jpg" />
+  <link rel="preload" as="image" href="images/POLO2.jpg" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top navbar-modern">
+    <div class="container">
+      <a class="navbar-brand" href="#hero">
+        <div class="brand-logo">
+          <img src="images/logo.png" alt="شعار المتجر Vibe Store" width="30" height="30" />
+          <span class="brand-text">Vibe Store</span>
+        </div>
+      </a>
+
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="تبديل القائمة للتنقل">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#hero">الرئيسية</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#about">من نحن</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              الصفحات
+            </a>
+            <ul class="dropdown-menu dropdown-menu-modern">
+              <li><a class="dropdown-item" href="#news">الأخبار</a></li>
+              <li><a class="dropdown-item" href="#products">آخر المنتجات</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item text-danger" href="#login">تسجيل الدخول</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#products">الأصناف</a>
+          </li>
+        </ul>
+
+        <div class="d-flex align-items-center">
+          <div class="search-box ms-4">
+            <label for="searchInput" class="visually-hidden">البحث في المتجر</label>
+            <input type="text" id="searchInput" class="form-control" placeholder="بحث..." aria-label="بحث في المتجر" />
+            <i class="fa-solid fa-search" aria-hidden="true"></i>
+          </div>
+
+          <button class="btn cart-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample" aria-label="سلة المشتريات">
+            <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+            <span class="cart-count">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <!-- Modern Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container">
+        <div class="row align-items-center min-vh-100">
+          <div class="col-lg-6">
+            <div class="hero-content text-white">
+              <div class="badge bg-danger mb-3">جديد الموسم</div>
+              <h1 class="display-3 fw-bold mb-4">Vibe Store</h1>
+              <p class="lead mb-4">
+                متجرك الإلكتروني الأول للأزياء العصرية والملابس الرياضية بأحدث
+                التصاميم وأفضل الجودات
+              </p>
+              <div class="d-flex gap-3 flex-wrap">
+                <button class="btn btn-primary btn-lg rounded-pill px-5 shadow-lg" onclick="scrollToProducts()">
+                  <i class="fa-solid fa-shopping-bag ms-2"></i>تسوق الآن
+                </button>
+              </div>
+              <div class="mt-5">
+                <div class="row g-4">
+                  <div class="col-4 text-center">
+                    <div class="stat-item">
+                      <div class="fs-3 fw-bold counter">500+</div>
+                      <p class="small">منتج</p>
+                    </div>
+                  </div>
+                  <div class="col-4 text-center">
+                    <div class="stat-item">
+                      <div class="fs-3 fw-bold counter">50k+</div>
+                      <p class="small">عميل سعيد</p>
+                    </div>
+                  </div>
+                  <div class="col-4 text-center">
+                    <div class="stat-item">
+                      <div class="fs-3 fw-bold counter">24/7</div>
+                      <p class="small">خدمة عملاء</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-image">
+              <div class="floating-card" onclick="scrollToProductAndOpenModal(0)">
+                <div class="card bg-white shadow-lg rounded-4 cursor-pointer position-relative">
+                  <span class="badge bg-danger position-absolute m-2 px-3 rounded-pill">جديد</span>
+                  <div class="card-body p-3">
+                    <div class="d-flex align-items-center">
+                      <img src="images/POLO1.jpg" alt="تيشيرت بولو كحلي" fetchpriority="high" decoding="async"
+                        class="rounded-3 me-3" width="80" height="80" style="object-fit: cover" />
+                      <div class="stars-overlay">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <div>
+                        <p class="h6 mb-1">تيشيرت بولو كحلي</p>
+                        <div class="text-warning small mb-1">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <span class="text-muted ms-1">(245)</span>
+                        </div>
+                        <div class="text-danger small mb-1">
+                          <i class="fa-solid fa-fire"></i> الأكثر مبيعاً
+                        </div>
+                        <p class="mb-0 fw-bold text-primary">60$</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="floating-card floating-card-2" onclick="scrollToProductAndOpenModal(1)">
+                <div class="card bg-white shadow-lg rounded-4 cursor-pointer position-relative">
+                  <span class="badge bg-danger position-absolute m-2 px-3 rounded-pill">خصم 40%</span>
+                  <div class="card-body p-3">
+                    <div class="d-flex align-items-center">
+                      <img src="images/POLO2.jpg" alt="بولو جيك آند جونز" decoding="async" fetchpriority="high"
+                        class="rounded-3 me-3" width="80" height="80" style="object-fit: cover" />
+                      <div class="stars-overlay">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-alt"></i>
+                      </div>
+                      <div>
+                        <p class="h6 mb-1">بولو جيك آند جونز</p>
+                        <div class="text-warning small mb-1">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-alt"></i>
+                          <span class="text-muted ms-1">(189)</span>
+                        </div>
+                        <div class="text-success small mb-1">
+                          <i class="fa-solid fa-bolt"></i> جديد
+                        </div>
+                        <p class="mb-0 fw-bold text-primary">120$</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Start section -->
+    <section id="products" class="py-5 text-center bg-light">
+      <div class="container">
+        <h2 class="fw-bold mb-5 text-dark">المنتجات المميزة</h2>
+
+        <div class="product-filters d-flex flex-wrap justify-content-center gap-2 mb-5" role="group"
+          aria-label="تصفية المنتجات">
+          <button class="btn btn-primary rounded-pill px-4 active shadow-sm" aria-pressed="true">
+            الكل
+          </button>
+          <button class="btn btn-outline-primary rounded-pill px-4 shadow-sm" aria-pressed="false">
+            الأكثر مبيعاً
+          </button>
+          <button class="btn btn-outline-primary rounded-pill px-4 shadow-sm" aria-pressed="false">
+            الأحدث
+          </button>
+          <button class="btn btn-outline-danger rounded-pill px-4 shadow-sm" aria-pressed="false">
+            الخصومات %
+          </button>
+        </div>
+
+        <div class="row g-4 mt-2">
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card h-100 shadow-sm border-0 product-card overflow-hidden">
+              <span class="badge bg-danger position-absolute m-3 px-3 rounded-pill">جديد</span>
+              <div class="img-container bg-white p-2" style="cursor: pointer">
+                <img src="images/POLO1.jpg" class="card-img-top img-fluid" alt="تيشيرت بولو" data-bs-toggle="modal"
+                  data-bs-target="#productModal" onclick="openModal(0)" />
+              </div>
+              <div class="card-body d-flex flex-column justify-content-between">
+                <p class="h5 card-title fw-bold mb-1">تيشيرت بولو كحلي</p>
+                <p class="card-text fw-bold fs-4 mb-3 text-primary">60$</p>
+                <button class="btn btn-dark w-100 rounded-pill shadow-sm" onclick="addToCart(0)">
+                  <i class="fa-solid fa-cart-plus ms-2"></i>إضافة للسلة
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card h-100 shadow-sm border-0 product-card overflow-hidden">
+              <span class="badge bg-danger position-absolute m-3 px-3 rounded-pill">خصم 40%</span>
+              <div class="img-container bg-white p-2" style="cursor: pointer">
+                <img src="images/POLO2.jpg" class="card-img-top img-fluid" alt="بولو جيك" data-bs-toggle="modal"
+                  data-bs-target="#productModal" onclick="openModal(1)" />
+              </div>
+              <div class="card-body d-flex flex-column justify-content-between">
+                <p class="h5 card-title fw-bold mb-1">بولو - جيك آند جونز</p>
+                <p class="card-text fw-bold fs-4 mb-3 text-primary">120$</p>
+                <button class="btn btn-dark w-100 rounded-pill shadow-sm" onclick="addToCart(1)">
+                  <i class="fa-solid fa-cart-plus ms-2"></i>إضافة للسلة
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card h-100 shadow-sm border-0 product-card overflow-hidden">
+              <span class="badge bg-success position-absolute m-3 px-3 rounded-pill">أحدث</span>
+              <div class="img-container bg-white p-2" style="cursor: pointer">
+                <img src="images/POLO3.jpg" loading="lazy" decoding="async" width="400" height="400"
+                  style="aspect-ratio: 1/1; object-fit: cover;" class="card-img-top img-fluid" alt="بولو كم طويل"
+                  data-bs-toggle="modal" data-bs-target="#productModal" onclick="openModal(2)" />
+              </div>
+              <div class="card-body d-flex flex-column justify-content-between">
+                <p class="h5 card-title fw-bold mb-1">تيشيرت بولو كم طويل</p>
+                <p class="card-text fw-bold fs-4 mb-3 text-primary">100$</p>
+                <button class="btn btn-dark w-100 rounded-pill shadow-sm" onclick="addToCart(2)">
+                  <i class="fa-solid fa-cart-plus ms-2"></i>إضافة للسلة
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card h-100 shadow-sm border-0 product-card overflow-hidden">
+              <div class="img-container bg-white p-2" style="cursor: pointer">
+                <img src="images/POLO4.jpg" loading="lazy" decoding="async" width="400" height="400"
+                  style="aspect-ratio: 1/1; object-fit: cover;" class="card-img-top img-fluid" alt="بولو هاواي"
+                  data-bs-toggle="modal" data-bs-target="#productModal" onclick="openModal(3)" />
+              </div>
+              <div class="card-body d-flex flex-column justify-content-between">
+                <p class="h5 card-title fw-bold mb-1">بولو هاواي - أوراق شجر</p>
+                <p class="card-text fw-bold fs-4 mb-3 text-primary">110$</p>
+                <button class="btn btn-dark w-100 rounded-pill shadow-sm" onclick="addToCart(3)">
+                  <i class="fa-solid fa-cart-plus ms-2"></i>إضافة للسلة
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card h-100 shadow-sm border-0 product-card overflow-hidden">
+              <span class="badge bg-danger position-absolute m-3 px-3 rounded-pill">خصم 25%</span>
+              <div class="img-container bg-white p-2" style="cursor: pointer">
+                <img src="images/كروب توب أديداس.jpg" loading="lazy" decoding="async" width="400" height="400"
+                  style="aspect-ratio: 1/1; object-fit: cover;" class="card-img-top img-fluid" alt="كروب توب"
+                  data-bs-toggle="modal" data-bs-target="#productModal" onclick="openModal(4)" />
+              </div>
+              <div class="card-body d-flex flex-column justify-content-between">
+                <p class="h5 card-title fw-bold mb-1">كروب توب لافندر</p>
+                <p class="card-text fw-bold fs-4 mb-3 text-primary">150$</p>
+                <button class="btn btn-dark w-100 rounded-pill shadow-sm" onclick="addToCart(4)">
+                  <i class="fa-solid fa-cart-plus ms-2"></i>إضافة للسلة
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card h-100 shadow-sm border-0 product-card overflow-hidden">
+              <span class="badge bg-danger position-absolute m-3 px-3 rounded-pill">خصم 30%</span>
+              <div class="img-container bg-white p-2" style="cursor: pointer">
+                <img src="images/تيشيرت Delightful.jpg" loading="lazy" decoding="async" width="400" height="400"
+                  style="aspect-ratio: 1/1; object-fit: cover;" class="card-img-top img-fluid" alt="Delightful"
+                  data-bs-toggle="modal" data-bs-target="#productModal" onclick="openModal(5)" />
+              </div>
+              <div class="card-body d-flex flex-column justify-content-between">
+                <p class="h5 card-title fw-bold mb-1">تيشيرت Delightful</p>
+                <p class="card-text fw-bold fs-4 mb-3 text-primary">60$</p>
+                <button class="btn btn-dark w-100 rounded-pill shadow-sm" onclick="addToCart(5)">
+                  <i class="fa-solid fa-cart-plus ms-2"></i>إضافة للسلة
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card h-100 shadow-sm border-0 product-card overflow-hidden">
+              <div class="img-container bg-white p-2" style="cursor: pointer">
+                <img src="images/تيشيرت كاجوال مخطط.jpg" loading="lazy" decoding="async" width="400" height="400"
+                  style="aspect-ratio: 1/1; object-fit: cover;" class="card-img-top img-fluid" alt="مخطط"
+                  data-bs-toggle="modal" data-bs-target="#productModal" onclick="openModal(6)" />
+              </div>
+              <div class="card-body d-flex flex-column justify-content-between">
+                <p class="h5 card-title fw-bold mb-1">تيشيرت كاجوال مخطط</p>
+                <p class="card-text fw-bold fs-4 mb-3 text-primary">90$</p>
+                <button class="btn btn-dark w-100 rounded-pill shadow-sm" onclick="addToCart(6)">
+                  <i class="fa-solid fa-cart-plus ms-2"></i>إضافة للسلة
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card h-100 shadow-sm border-0 product-card overflow-hidden">
+              <span class="badge bg-danger position-absolute m-3 px-3 rounded-pill" style="z-index: 10">NEW</span>
+
+              <div class="img-container position-relative bg-white" style="
+                  cursor: pointer;
+                  height: 300px;
+                  overflow: hidden;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                ">
+                <img src="images/حذاء رياضي.jpg" loading="lazy" decoding="async"
+                  class="card-img-top img-fluid shadow-lg rounded-4" alt="حذاء" data-bs-toggle="modal"
+                  data-bs-target="#productModal" onclick="openModal(7)" style="
+                    height: 250px;
+                    object-fit: contain;
+                    transition: all 0.5s ease;
+                  " />
+              </div>
+
+              <div class="card-body text-center d-flex flex-column align-items-center">
+                <p class="h5 card-title fw-bold">حذاء رياضي عصري</p>
+                <p class="card-text fw-bold fs-4 text-primary">70$</p>
+                <button class="btn btn-dark w-100 rounded-pill shadow-sm" onclick="addToCart(7)">
+                  <i class="fa-solid fa-cart-plus ms-2"></i>إضافة للسلة
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- End section -->
+    <!-- Start Service Policy Section -->
+    <section class="py-5 bg-light" id="policy">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold mb-3 section-title">
+            <i class="fa-solid fa-shield-halved me-3"></i>
+            سياسة الخدمة والضمان
+          </h2>
+          <p class="text-muted section-subtitle">شروط وأحكام خدمتنا لضمان أفضل تجربة لك</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Shipping Policy -->
+          <div class="col-lg-6">
+            <div class="policy-card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="flex-shrink-0">
+                    <div class="policy-icon bg-primary text-white rounded-circle p-3">
+                      <i class="fa-solid fa-truck-fast fa-lg"></i>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <h3 class="h5 fw-bold mb-0">سياسة الشحن</h3>
+                  </div>
+                </div>
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <i class="fa-solid fa-check text-success me-2"></i>
+                    شحن مجاني للطلبات فوق 200$
+                  </li>
+                  <li class="mb-2">
+                    <i class="fa-solid fa-check text-success me-2"></i>
+                    توصيل خلال 2-5 أيام عمل
+                  </li>
+                  <li class="mb-2">
+                    <i class="fa-solid fa-check text-success me-2"></i>
+                    تتبع الشحنة عبر الرقم
+                  </li>
+                  <li class="mb-0">
+                    <i class="fa-solid fa-check text-success me-2"></i>
+                    شحن لجميع المحافظات
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Return Policy -->
+          <div class="col-lg-6">
+            <div class="policy-card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="flex-shrink-0">
+                    <div class="policy-icon bg-danger text-white rounded-circle p-3">
+                      <i class="fa-solid fa-rotate-left fa-lg"></i>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <h3 class="h5 fw-bold mb-0">سياسة الإرجاع</h3>
+                  </div>
+                </div>
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <i class="fa-solid fa-check text-success me-2"></i>
+                    إرجاع خلال 14 يوم من الاستلام
+                  </li>
+                  <li class="mb-2">
+                    <i class="fa-solid fa-check text-success me-2"></i>
+                    المنتج يجب أن يكون في حالته الأصلية
+                  </li>
+                  <li class="mb-2">
+                    <i class="fa-solid fa-check text-success me-2"></i>
+                    استرداد المبلغ خلال 7 أيام عمل
+                  </li>
+                  <li class="mb-0">
+                    <i class="fa-solid fa-check text-success me-2"></i>
+                    تغطية تكاليف الشحن للإرجاع
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Warranty Policy -->
+          <div class="col-lg-6">
+            <div class="policy-card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="flex-shrink-0">
+                    <div class="policy-icon bg-success text-white rounded-circle p-3">
+                      <i class="fa-solid fa-shield-halved fa-lg"></i>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <h3 class="h5 fw-bold mb-0">سياسة الضمان</h3>
+                  </div>
+                </div>
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <i class="fa-solid fa-check text-success me-2"></i>
+                    ضمان سنة على جميع المنتجات
+                  </li>
+                  <li class="mb-2">
+                    <i class="fa-solid fa-check text-success me-2"></i>
+                    تغطية عيوب التصنيع
+                  </li>
+                  <li class="mb-2">
+                    <i class="fa-solid fa-check text-success me-2"></i>
+                    صيانة مجانية خلال فترة الضمان
+                  </li>
+                  <li class="mb-0">
+                    <i class="fa-solid fa-check text-success me-2"></i>
+                    استبدال فوري للمنتجات المعيبة
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Payment Policy -->
+          <div class="col-lg-6">
+            <div class="policy-card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="flex-shrink-0">
+                    <div class="policy-icon bg-warning text-white rounded-circle p-3">
+                      <i class="fa-solid fa-credit-card fa-lg"></i>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <h3 class="h5 fw-bold mb-0">سياسة الدفع</h3>
+                  </div>
+                </div>
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <i class="fa-solid fa-check text-success me-2"></i>
+                    دفع آمن ومشفر 100%
+                  </li>
+                  <li class="mb-2">
+                    <i class="fa-solid fa-check text-success me-2"></i>
+                    جميع بطاقات الائتمان مدعومة
+                  </li>
+                  <li class="mb-2">
+                    <i class="fa-solid fa-check text-success me-2"></i>
+                    الدفع عند الاستلام متاح
+                  </li>
+                  <li class="mb-0">
+                    <i class="fa-solid fa-check text-success me-2"></i>
+                    تقسيط على 6 أشهر بدون فوائد
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Enhanced Additional Info -->
+        <div class="row mt-5">
+          <div class="col-12" id="about">
+            <div class="trust-section border-0 shadow-sm">
+              <div class="trust-header text-center mb-4 pt-5">
+                <h3 class="fw-bold mb-3">
+                  <i class="fa-solid fa-handshake me-2"></i>
+                  نلتزم بثقتكم
+                </h3>
+                <p class="text-muted">نضمن لكم أفضل خدمة وأعلى معايير الجودة</p>
+              </div>
+              <div class="trust-body p-4">
+                <div class="row">
+                  <div class="col-md-4 text-center mb-4 mb-md-0">
+                    <div class="trust-item">
+                      <div class="trust-icon mb-3">
+                        <i class="fa-solid fa-headset fa-3x"></i>
+                      </div>
+                      <h4 class="h5 fw-bold">خدمة عملاء 24/7</h4>
+                      <p class="text-muted">فريق دعم متخصص جاهز لمساعدتك في أي وقت</p>
+                      <div class="trust-features">
+                        <span class="badge bg-primary">دردشة مباشرة</span>
+                        <span class="badge bg-success">هاتف: 19000</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 text-center mb-4 mb-md-0">
+                    <div class="trust-item">
+                      <div class="trust-icon mb-3">
+                        <i class="fa-solid fa-award fa-3x"></i>
+                      </div>
+                      <h4 class="h5 fw-bold">جودة مضمونة</h4>
+                      <p class="text-muted">منتجات أصلية 100% من مصادر موثوقة</p>
+                      <div class="trust-features">
+                        <span class="badge bg-warning">شهادة أصالة</span>
+                        <span class="badge bg-info">ضمان سنة</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 text-center">
+                    <div class="trust-item">
+                      <div class="trust-icon mb-3">
+                        <i class="fa-solid fa-lock fa-3x"></i>
+                      </div>
+                      <h4 class="h5 fw-bold">خصوصية محمية</h4>
+                      <p class="text-muted">بياناتك آمنة معنا ولا نشاركها مع أي طرف</p>
+                      <div class="trust-features">
+                        <span class="badge bg-danger">تشفير SSL</span>
+                        <span class="badge bg-secondary">GDPR متوافق</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Service Policy Section -->
+    <!-- Start Contact Section -->
+    <div class="modal fade" id="productModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+        <div class="modal-content border-0 shadow-lg rounded-4">
+          <div class="modal-header border-0">
+            <h2 class="modal-title h5" id="productModalLabel">تفاصيل المنتج</h2>
+          </div>
+
+          <div class="modal-body p-4">
+            <div class="row align-items-center">
+              <div class="col-md-6 text-center">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="false">
+                  <div class="carousel-inner" id="modalCarouselInner"></div>
+                </div>
+              </div>
+
+              <div class="col-md-6 text-end" dir="rtl">
+                <h3 class="fw-bold mb-2" id="modalTitle">اسم المنتج</h3>
+                <div class="mb-3">
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                  <span class="text-muted small ms-2">(4.5 تقييم)</span>
+                </div>
+
+                <p class="text-muted mb-4" id="modalDesc">
+                  وصف المنتج هيظهر هنا بالتفصيل أول ما تختار أي كارت منتج.
+                </p>
+
+                <h3 class="text-primary fw-bold mb-4" id="modalPrice">00$</h3>
+
+                <div class="d-grid gap-2">
+                  <button class="btn btn-dark py-3 rounded-pill fw-bold shadow-sm"
+                    onclick="addToCart(currentProductIndex)">
+                    <i class="fa-solid fa-cart-plus ms-2"></i> إضافة إلى السلة
+                  </button>
+                  <button class="btn btn-outline-secondary rounded-pill py-2" data-bs-dismiss="modal"
+                    aria-label="إغلاق تفاصيل المنتج">
+                    <i class="fa-solid fa-times me-2" aria-hidden="true"></i>إغلاق النافذة
+                  </button>
+                </div>
+
+                <div class="mt-4 d-flex justify-content-around text-center border-top pt-3">
+                  <div>
+                    <i class="fa-solid fa-truck-fast text-success mb-1"></i>
+                    <p class="small mb-0">شحن سريع</p>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-shield-halved text-primary mb-1"></i>
+                    <p class="small mb-0">ضمان سنة</p>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-rotate-left text-danger mb-1"></i>
+                    <p class="small mb-0">إرجاع مجاني</p>
+                  </div>
+                </div>
+
+                <!-- أسهم التقليب بين المنتجات -->
+                <div class="mt-4 d-flex justify-content-between align-items-center">
+                  <button class="btn btn-outline-primary rounded-circle" onclick="updateCounterAndShowPrev()">
+                    <i class="fa-solid fa-chevron-right"></i> المنتج السابق
+                  </button>
+                  <span class="text-muted small" id="productCounter">1 / 8</span>
+                  <button class="btn btn-outline-primary rounded-circle" onclick="updateCounterAndShowNext()">
+                    المنتج التالي <i class="fa-solid fa-chevron-left"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Model -->
+    <!-- Start Offcanvas -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header d-flex justify-content-between align-items-center border-bottom">
+        <h5 class="offcanvas-title fw-bold" id="offcanvasExampleLabel">
+          سلة المشتريات (0)
+        </h5>
+        <button type="button" class="btn-close text-reset m-0" data-bs-dismiss="offcanvas"
+          aria-label="إغلاق السلة"></button>
+      </div>
+
+      <div class="offcanvas-body">
+        <div class="text-center py-5">
+          <i class="fa-solid fa-shopping-cart fa-3x text-muted mb-3"></i>
+          <h5 class="text-muted">السلة فارغة</h5>
+          <p class="text-muted">أضف بعض المنتجات للبدء</p>
+        </div>
+        <div class="cart-footer mt-5 p-3 bg-light rounded-4">
+          <h4 class="d-flex justify-content-between align-items-center">
+            <span>الإجمالي:</span>
+            <span class="text-primary fw-bold">0$</span>
+          </h4>
+          <button class="btn btn-dark w-100 py-3 mt-3 rounded-pill fw-bold shadow" disabled>
+            إكمال عملية الشراء <i class="fa-solid fa-arrow-left ms-2"></i>
+          </button>
+        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Service Policy Section -->
+  <!-- Start Contact Section -->
+  <section class="py-5 bg-light" id="contact">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold mb-3 section-title">
+          <i class="fa-solid fa-comments me-3"></i>
+          تواصل معنا
+        </h2>
+        <p class="text-muted section-subtitle">نحن هنا لمساعدتك في أي وقت</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="contact-card h-100 border-0 shadow-sm">
+            <div class="card-body text-center p-4">
+              <div class="contact-icon mb-3">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <h5 class="fw-bold mb-3">الهاتف</h5>
+              <p class="text-muted mb-0">+20 123 456 7890</p>
+              <p class="text-muted">من السبت إلى الخميس (9 ص - 9 م)</p>
+              <div class="contact-features">
+                <span class="badge bg-primary">متاح 24/7</span>
+                <span class="badge bg-success">دعم فني</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4" id="login">
+          <div class="contact-card h-100 border-0 shadow-sm">
+            <div class="card-body text-center p-4">
+              <div class="contact-icon mb-3">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <h5 class="fw-bold mb-3">البريد الإلكتروني</h5>
+              <p class="text-muted mb-0">info@ultmt.com</p>
+              <p class="text-muted">سنرد خلال 24 ساعة</p>
+              <div class="contact-features">
+                <span class="badge bg-danger">استجابة سريعة</span>
+                <span class="badge bg-warning">دعم فني</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="contact-card h-100 border-0 shadow-sm">
+            <div class="card-body text-center p-4">
+              <div class="contact-icon mb-3">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <h5 class="fw-bold mb-3">العنوان</h5>
+              <p class="text-muted mb-0">القاهرة، مصر</p>
+              <p class="text-muted">شارع الملك فهد، مركز التسوق</p>
+              <div class="contact-features">
+                <span class="badge bg-info">موقف سيارات</span>
+                <span class="badge bg-secondary">خدمة عملاء</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-lg-8 mx-auto">
+          <div class="contact-form-card border-0 shadow-sm">
+            <div class="card-body p-5">
+              <h4 class="fw-bold text-center mb-4 form-title">
+                <i class="fa-solid fa-message me-2"></i>
+                أرسل لنا رسالة
+              </h4>
+
+              <form>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label fw-bold">
+                      <i class="fa-solid fa-user me-1"></i>
+                      الاسم
+                    </label>
+                    <input type="text" class="form-control" placeholder="أدخل اسمك" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label fw-bold">
+                      <i class="fa-solid fa-envelope me-1"></i>
+                      البريد الإلكتروني
+                    </label>
+                    <input type="email" class="form-control" placeholder="أدخل بريدك الإلكتروني" required>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label fw-bold">
+                      <i class="fa-solid fa-tag me-1"></i>
+                      الموضوع
+                    </label>
+                    <input type="text" class="form-control" placeholder="موضوع الرسالة" required>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label fw-bold">
+                      <i class="fa-solid fa-message me-1"></i>
+                      الرسالة
+                    </label>
+                    <textarea class="form-control" rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
+                  </div>
+                  <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary rounded-pill px-5 py-3 submit-btn">
+                      <i class="fa-solid fa-paper-plane ms-2"></i>
+                      إرسال الرسالة
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Enhanced Social Media -->
+      <div class="social-section mt-5">
+        <div class="social-header text-center">
+          <h5 class="fw-bold mb-3 social-title">
+            <i class="fa-solid fa-share-nodes me-2"></i>
+            تابعنا على
+          </h5>
+          <p class="text-muted">كن على اطلاع بكل جديد</p>
+        </div>
+        <div class="social-links d-flex justify-content-center gap-3">
+          <a href="#" class="social-btn facebook" title="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#" class="social-btn twitter" title="Twitter">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="#" class="social-btn instagram" title="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" class="social-btn whatsapp" title="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="#" class="social-btn linkedin" title="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="#" class="social-btn youtube" title="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+</main>
+<script src="js/bootstrap.bundle.min.js" defer></script>
+<script src="js/main.js" defer></script>
+<script src="js/protection.js" defer></script>
+</body>
+
+</html>
